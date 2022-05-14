@@ -1,5 +1,5 @@
 import random
-list2 = ('rock','paper','scissors')
+list2 = ('Rock','Paper','Scissors')
 p1count=0
 p2count=0
 print('Player name:')
@@ -9,7 +9,7 @@ while(p1count<2 and p2count<2):
     print('Rock, paper or scissors?')
     comp=random.choice(list2)
     c2=input()
-    if(c2.upper()=='ROCK' and comp=='paper'):
+    if(c2.upper()=='ROCK' and comp=='Paper'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -18,7 +18,7 @@ while(p1count<2 and p2count<2):
             result = 'correct'
             p2count = p2count +1
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='ROCK' and comp=='scissors'):
+    elif(c2.upper()=='ROCK' and comp=='Scissors'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -26,7 +26,7 @@ while(p1count<2 and p2count<2):
             print(f'{c1} won!!')
             p1count = p1count +1
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='ROCK' and comp=='rock'):
+    elif(c2.upper()=='ROCK' and comp=='Rock'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -35,7 +35,7 @@ while(p1count<2 and p2count<2):
             p1count += 0
             p2count += 0
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='PAPER' and comp=='rock'):
+    elif(c2.upper()=='PAPER' and comp=='Rock'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -43,7 +43,7 @@ while(p1count<2 and p2count<2):
             print(f'{c1} won!!')
             p1count = p1count +1
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='PAPER' and comp=='scissors'):
+    elif(c2.upper()=='PAPER' and comp=='Scissors'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -51,7 +51,7 @@ while(p1count<2 and p2count<2):
             print('Computer won')
             p2count = p2count +1
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='PAPER' and comp=='paper'):
+    elif(c2.upper()=='PAPER' and comp=='Paper'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -60,7 +60,7 @@ while(p1count<2 and p2count<2):
             p1count += 0
             p2count += 0
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='SCISSORS' and comp=='rock'):
+    elif(c2.upper()=='SCISSORS' and comp=='Rock'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -68,7 +68,7 @@ while(p1count<2 and p2count<2):
             print('Computer won')
             p2count = p2count +1
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='SCISSORS' and comp=='paper'):
+    elif(c2.upper()=='SCISSORS' and comp=='Paper'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
@@ -76,7 +76,7 @@ while(p1count<2 and p2count<2):
             print(f'{c1} won!!')
             p1count = p1count +1
             print(f'Computer : {p2count} \n{c1} : {p1count}')
-    elif(c2.upper()=='SCISSORS' and comp=='scissors'):
+    elif(c2.upper()=='SCISSORS' and comp=='Scissors'):
             print(f'{c1} chooses:')
             print (c2.upper())
             print('Computer chooses:')
