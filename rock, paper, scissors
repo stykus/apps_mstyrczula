@@ -1,0 +1,94 @@
+import random
+list2 = ('rock','paper','scissors')
+p1count=0
+p2count=0
+print('Player name:')
+c1=input()
+print(f'Hi there, {c1}!')
+while(p1count<2 and p2count<2):
+    print('Rock, paper or scissors?')
+    comp=random.choice(list2)
+    c2=input()
+    if(c2.upper()=='ROCK' and comp=='paper'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print('Computer won')
+            result = 'correct'
+            p2count = p2count +1
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='ROCK' and comp=='scissors'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print(f'{c1} won!!')
+            p1count = p1count +1
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='ROCK' and comp=='rock'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print('DRAW')
+            p1count += 0
+            p2count += 0
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='PAPER' and comp=='rock'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print(f'{c1} won!!')
+            p1count = p1count +1
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='PAPER' and comp=='scissors'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print('Computer won')
+            p2count = p2count +1
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='PAPER' and comp=='paper'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print('DRAW')
+            p1count += 0
+            p2count += 0
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='SCISSORS' and comp=='rock'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print('Computer won')
+            p2count = p2count +1
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='SCISSORS' and comp=='paper'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print(f'{c1} won!!')
+            p1count = p1count +1
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    elif(c2.upper()=='SCISSORS' and comp=='scissors'):
+            print(f'{c1} chooses:')
+            print (c2.upper())
+            print('Computer chooses:')
+            print (comp)
+            print('DRAW')
+            p1count = p1count
+            p2count = p2count
+            print(f'Computer : {p2count} \n{c1} : {p1count}')
+    else:
+            print('You can only write: rock, paper or scissors. Which is it?')
+            continue
+if p2count>p1count:
+    print('COMPUTER WON :(')
+else:
+    print('YOU WON!!!')
