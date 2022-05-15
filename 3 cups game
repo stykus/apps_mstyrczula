@@ -7,7 +7,7 @@ def shuffle_list(mylist):
 def player_guess():
     player = ''
     while player not in ['1','2','3']:
-        player = input('Pick a number: 1, 2 or 3:\n')
+        player = input('Pick a cup: 1, 2 or 3:\n')
         if player == '1':
             guess = 0
         elif player == '2':
