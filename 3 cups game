@@ -1,0 +1,39 @@
+import random
+from random import shuffle
+def shuffle_list(mylist):
+    shuffle(mylist)
+    return mylist
+
+def player_guess():
+    player = ''
+    while player not in ['1','2','3']:
+        player = input('Pick a number: 1, 2 or 3:\n')
+        if player == '1':
+            guess = 0
+        elif player == '2':
+            guess = 1
+        elif player == '3':
+            guess = 2
+    return guess
+
+def check_guess(mylist,guess):
+    points = 0
+    while points == 0:
+        if mylist[guess] == 'O':
+            print ('GOOD GUESS!')
+            print (mylist)
+            points+=1
+        else:
+            print ('Try again!')
+            print (mylist)
+            shuffle_list(mylist)
+            guess=player_guess()
+            points+=0
+
+cups = [' ','O',' ']
+
+mixed_list = shuffle_list(cups)
+
+guess = player_guess()
+
+check_guess(mixed_list,guess)
